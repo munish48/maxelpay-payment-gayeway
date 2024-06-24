@@ -1,24 +1,24 @@
 {
-    "name": "laravel/maxelpay",
-    "description": "This package is used to pay in the crypto currency",
-    "authors": [
-        {
-            "name": "tru-wp-dev",
-            "email": "truwpdev-git@truinc.in"
-        }
-    ],
-    "minimum-stability": "dev",
-    "autoload": {
-        "psr-4": {
-            "Maxelpay\\": "src/"
-        }
-    },
-    "require": {},
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Maxelpay\\MaxelpayServiceProvider"
-            ]
-        }
+  "name": "maxelpay/maxelpay",
+  "description": "This package is used to pay in the crypto currency",
+  "authors": [
+    {
+      "name": "tru-wp-dev",
+      "email": "truwpdev-git@truinc.in"
     }
+  ],
+  "minimum-stability": "dev",
+  "autoload": {
+    "psr-4": {
+      "Maxelpay\\": "src/"
+    }
+  },
+  "require": {},
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Maxelpay\\MaxelpayServiceProvider"
+      ]
+    }
+  }
 }

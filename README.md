@@ -40,7 +40,7 @@ Maxelpay\MaxelpayServiceProvider::class,
 ## HOW TO USE
 
 ```php
- php artisan vendor:publish --provider="Maxelpay\MaxelpayServiceProvider" --tag="config"
+ php artisan vendor:publish --provider="Maxelpay\MaxelpayServiceProvider"
 ```
 
 ```php

@@ -1,6 +1,6 @@
 <?php
 
-namespace Maxelpay\Maxelpay;
+namespace Maxelpay;
 
 use Illuminate\Support\ServiceProvider;
 

@@ -1,19 +1,22 @@
 {
   "name": "maxelpay/maxelpay",
   "description": "This package is used to pay in the crypto currency",
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {
+    "maxelpay/maxelpay": "^1.0"
+  },
   "authors": [
     {
-      "name": "tru-wp-dev",
-      "email": "truwpdev-git@truinc.in"
+      "name": "MaxelPay",
+      "email": "contact@maxelpay.com"
     }
   ],
-  "minimum-stability": "dev",
   "autoload": {
     "psr-4": {
       "Maxelpay\\": "src/"
     }
   },
-  "require": {},
   "extra": {
     "laravel": {
       "providers": [

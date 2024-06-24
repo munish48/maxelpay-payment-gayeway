@@ -11,7 +11,7 @@ Git repo of the demo: https://github.com/munish48/maxelpay-payment-gayeway
 Install the package through [Composer](http://getcomposer.org/).
 
 For Laravel :
-`composer require "laravel/maxelpay"`
+`composer require "maxelpay/maxelpay"`
 
 ## CONFIGURATION
 

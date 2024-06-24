@@ -4,7 +4,7 @@
   "minimum-stability": "dev",
   "prefer-stable": true,
   "require": {
-    "maxelpay/maxelpay": "^1.0"
+    "php": "^7.4"
   },
   "authors": [
     {

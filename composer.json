@@ -3,9 +3,7 @@
   "description": "This package is used to pay in the crypto currency",
   "minimum-stability": "dev",
   "prefer-stable": true,
-  "require": {
-    "php": "^7.4"
-  },
+  "require": {},
   "authors": [
     {
       "name": "MaxelPay",

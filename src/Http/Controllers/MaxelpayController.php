@@ -16,7 +16,13 @@ class MaxelpayController extends Controller
      * @return array
      */
     static function maxelpayPayload(array $payload){
-
+       
+        if(strlen(config('maxelpay.maxelpay_secret_key')) < 16)
+            return [
+                'status' => 422,
+                'message' => 'The secret key must have a minimum length of 16 characters.'
+            ];
+        
         $apiurl = config('maxelpay.maxelpay_payment_mode') == 'STAGING' ? self::$apiurl_stag : self::$apiurl_live;
         $result = self::encryption($payload);
 
@@ -49,15 +55,14 @@ class MaxelpayController extends Controller
     static private function encryption(array $payload ) {
        
         $encrypted_data = openssl_encrypt(
-            json_encode($payload),
-            "aes-256-cbc",
-            config('maxelpay.maxelpay_secret_key'),
-            true,
-            substr( config('maxelpay.maxelpay_secret_key'), 0, 16 )
+                json_encode($payload),
+                "aes-256-cbc",
+                config('maxelpay.maxelpay_secret_key'),
+                true,
+                substr( config('maxelpay.maxelpay_secret_key'), 0, 16 )
         );
-       
         return base64_encode( $encrypted_data );
-       
+      
     }
 
 }

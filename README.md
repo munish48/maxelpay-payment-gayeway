@@ -15,26 +15,20 @@ For Laravel :
 
 ## CONFIGURATION
 
-- Laravel upto 10
-
 1. Open config/app.php and add this line to your Service Providers Array.
 
 ```php
-Maxelpay\MaxelpayServiceProvider::class,
+ 'providers' => ServiceProvider::defaultProviders()->merge([
+        Maxelpay\MaxelpayServiceProvider::class,
+  ])->toArray(),
 ```
 
 2. Open config/app.php and add this line to your Aliases
 
 ```php
-  'Maxelpay' => Maxelpay\MaxelpayServiceProvider::class
-```
-
-- Laravel 11
-
-1. Open bootstrap/providers.php and add this line to your Service Providers Array.
-
-```php
-Maxelpay\MaxelpayServiceProvider::class,
+  'aliases' => Facade::defaultAliases()->merge([
+       'Maxelpay' => Maxelpay\Http\Controllers\MaxelpayController::class,
+  ])->toArray(),
 ```
 
 ## HOW TO USE
@@ -60,14 +54,6 @@ Maxelpay\MaxelpayServiceProvider::class,
     );
 ```
 
-- Laravel upto 10
-
 ```php
 Maxelpay::maxelpayPayload($data);
-```
-
-- Laravel 11
-
-```php
-Maxelpay\Http\Controllers\MaxelpayController::maxelpayPayload($data);
 ```

@@ -15,7 +15,23 @@ For Laravel :
 
 ## CONFIGURATION
 
+- Laravel upto 10
+
 1. Open config/app.php and add this line to your Service Providers Array.
+
+```php
+  Maxelpay\MaxelpayServiceProvider::class,
+```
+
+2. Open config/app.php and add this line to your Aliases
+
+```php
+  'Maxelpay' => Maxelpay\Http\Controllers\MaxelpayController::class,
+```
+
+- Laravel 11
+
+1. Open config/app.php and add this line.
 
 ```php
  'providers' => ServiceProvider::defaultProviders()->merge([
@@ -23,7 +39,7 @@ For Laravel :
   ])->toArray(),
 ```
 
-2. Open config/app.php and add this line to your Aliases
+2. Open config/app.php and add this line
 
 ```php
   'aliases' => Facade::defaultAliases()->merge([

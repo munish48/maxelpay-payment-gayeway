@@ -53,12 +53,11 @@ For Laravel :
  php artisan vendor:publish --provider="Maxelpay\MaxelpayServiceProvider"
 ```
 
-``php
+```php
 MAXELPAY_API_KEY // api key
 MAXELPAY_SECRET_KEY // secret key
 MAXELPAY_PAYMENT_MODE="STAGING" OR "LIVE" // payment mode staging or live
-
-````
+```
 
 ```php
 // Payload example
@@ -75,7 +74,7 @@ MAXELPAY_PAYMENT_MODE="STAGING" OR "LIVE" // payment mode staging or live
         "cancelUrl"   => URL::to('/')."/cancel", // Cancle Url
         "webhookUrl"  => URL::to('/')."/webhook" // Webhook url
     );
-````
+```
 
 ```php
 Maxelpay::maxelpayPayload($data);

@@ -15,20 +15,6 @@ For Laravel :
 
 ## CONFIGURATION
 
-- Laravel upto 10
-
-1. Open config/app.php and add this line to your Service Providers Array.
-
-```php
-  Maxelpay\MaxelpayServiceProvider::class,
-```
-
-2. Open config/app.php and add this line to your Aliases
-
-```php
-  'Maxelpay' => Maxelpay\Http\Controllers\MaxelpayController::class,
-```
-
 - Laravel 11
 
 1. Open bootstrap/providers.php and add this line to your Service Providers Array.
@@ -48,6 +34,20 @@ use Illuminate\Support\Facades\Facade;
   'aliases' => Facade::defaultAliases()->merge([
        'Maxelpay' => Maxelpay\Http\Controllers\MaxelpayController::class,
   ])->toArray(),
+```
+
+- Laravel upto 10
+
+1. Open config/app.php and add this line to your Service Providers Array.
+
+```php
+  Maxelpay\MaxelpayServiceProvider::class,
+```
+
+2. Open config/app.php and add this line to your Aliases
+
+```php
+  'Maxelpay' => Maxelpay\Http\Controllers\MaxelpayController::class,
 ```
 
 ## HOW TO USE
@@ -73,10 +73,10 @@ MAXELPAY_PAYMENT_MODE="STAGING" OR "LIVE"// payment mode staging or live
         "userName"    => "ABC", // Customer Name
         "siteName"    => "Maxelpay", // Website name
         "userEmail"   => "abc@gmail.com", // Customer Email
-        "redirectUrl" => URL::to('/')."/success", // Success URL
-        "websiteUrl"  => URL::to('/')."", // Website URL
-        "cancelUrl"   => URL::to('/')."/cancel", // Cancel URL
-        "webhookUrl"  => URL::to('/')."/webhook" // Webhook URL
+        "redirectUrl" => URL::to('success'), // Success URL
+        "websiteUrl"  => URL::to('/'), // Website URL
+        "cancelUrl"   => URL::to('cancel'), // Cancel URL
+        "webhookUrl"  => URL::to('webhook')// Webhook URL
     );
 ```
 

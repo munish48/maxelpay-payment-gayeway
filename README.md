@@ -31,21 +31,18 @@ For Laravel :
 
 - Laravel 11
 
-1. Open config/app.php and add this line.
-
-```
-// Include on the top
-use Illuminate\Support\Facades\Facade;
-use Illuminate\Support\ServiceProvider;
-```
+1. Open bootstrap/providers.php and add this line to your Service Providers Array.
 
 ```php
- 'providers' => ServiceProvider::defaultProviders()->merge([
         Maxelpay\MaxelpayServiceProvider::class,
-  ])->toArray(),
 ```
 
 2. Open config/app.php and add this line
+
+```php
+// Include on the top
+use Illuminate\Support\Facades\Facade;
+```
 
 ```php
   'aliases' => Facade::defaultAliases()->merge([

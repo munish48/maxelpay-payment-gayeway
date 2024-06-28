@@ -9,13 +9,13 @@ use Illuminate\Support\Facades\Redirect;
 
 class MaxelpayController extends Controller
 {    
-    protected static $apiurl_stag = 'https://dev-api.maxelpay.com/v1/stg/merchant/order/checkout';
-    protected static $apiurl_live = 'https://dev-api.maxelpay.com/v1/prod/merchant/order/checkout';
+    protected static $SANDBOX_API_URL = 'https://dev-api.maxelpay.com/v1/stg/merchant/order/checkout';
+    protected static $API_URL = 'https://dev-api.maxelpay.com/v1/prod/merchant/order/checkout';
     /**
      * @param array $payload
      * @return array
      */
-    static function maxelpayPayload(array $payload){
+    static function payload(array $payload){
        
         if(strlen(config('maxelpay.maxelpay_secret_key')) < 16)
             return [
@@ -23,7 +23,7 @@ class MaxelpayController extends Controller
                 'message' => 'The secret key must have a minimum length of 16 characters.'
             ];
         
-        $apiurl = config('maxelpay.maxelpay_payment_mode') == 'STAGING' ? self::$apiurl_stag : self::$apiurl_live;
+        $apiurl = config('maxelpay.maxelpay_payment_mode') == 'STAGING' ? self::$SANDBOX_API_URL : self::$API_URL;
         $result = self::encryption($payload);
 
         $response = Http::withHeaders([

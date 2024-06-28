@@ -33,6 +33,12 @@ For Laravel :
 
 1. Open config/app.php and add this line.
 
+```
+// Include on the top
+use Illuminate\Support\Facades\Facade;
+use Illuminate\Support\ServiceProvider;
+```
+
 ```php
  'providers' => ServiceProvider::defaultProviders()->merge([
         Maxelpay\MaxelpayServiceProvider::class,
@@ -57,7 +63,7 @@ For Laravel :
 // add this line in .env file
 MAXELPAY_API_KEY="******************" // api key
 MAXELPAY_SECRET_KEY="******************"  // secret key
-MAXELPAY_PAYMENT_MODE="STAGING" OR "LIVE" // payment mode staging or live
+MAXELPAY_PAYMENT_MODE="stg" OR "prod" // payment mode staging or live
 ```
 
 ```php
@@ -70,13 +76,13 @@ MAXELPAY_PAYMENT_MODE="STAGING" OR "LIVE" // payment mode staging or live
         "userName"    => "ABC", // Customer Name
         "siteName"    => "Maxelpay", // Website name
         "userEmail"   => "abc@gmail.com", // Customer Email
-        "redirectUrl" => URL::to('/')."/success", // Success url
-        "websiteUrl"  => URL::to('/')."", // Website url
-        "cancelUrl"   => URL::to('/')."/cancel", // Cancle Url
-        "webhookUrl"  => URL::to('/')."/webhook" // Webhook url
+        "redirectUrl" => URL::to('/')."/success", // Success URL
+        "websiteUrl"  => URL::to('/')."", // Website URL
+        "cancelUrl"   => URL::to('/')."/cancel", // Cancel URL
+        "webhookUrl"  => URL::to('/')."/webhook" // Webhook URL
     );
 ```
 
 ```php
-Maxelpay::maxelpayPayload($data);
+Maxelpay::payload($data);
 ```

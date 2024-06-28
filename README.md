@@ -34,7 +34,7 @@ For Laravel :
 1. Open bootstrap/providers.php and add this line to your Service Providers Array.
 
 ```php
-        Maxelpay\MaxelpayServiceProvider::class,
+  Maxelpay\MaxelpayServiceProvider::class,
 ```
 
 2. Open config/app.php and add this line

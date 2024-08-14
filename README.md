@@ -2,10 +2,6 @@
 
 A Maxelpay Integration for Laravel Framework
 
-## QUICK PARTIAL DEMO
-
-Git repo of the demo: https://github.com/munish48/maxelpay-payment-gayeway
-
 ## INSTALLATION
 
 You can install the package via [Composer](http://getcomposer.org/).

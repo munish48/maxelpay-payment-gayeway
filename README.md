@@ -61,14 +61,14 @@ MAXELPAY_SECRET_KEY="******************"  #Secret key
 MAXELPAY_PAYMENT_MODE="STAGING" #Payment mode STAGING or LIVE
 ```
 
-#### Add Maxelpay to the top of the file
+#### Import classes in your controller
 
 ```php
-use Maxelpay;
 use URL;
+use Maxelpay;
 ```
 
-#### Payload
+#### Example
 
 ```php
 

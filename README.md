@@ -61,7 +61,13 @@ MAXELPAY_SECRET_KEY="******************"  #Secret key
 MAXELPAY_PAYMENT_MODE="STAGING" #Payment mode STAGING or LIVE
 ```
 
-#### Example
+#### Add Maxelpay to the top of the file
+
+```php
+use Maxelpay;
+```
+
+#### Payload
 
 ```php
 

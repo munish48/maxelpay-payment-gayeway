@@ -53,11 +53,12 @@ use Illuminate\Support\Facades\Facade;
  php artisan vendor:publish --provider="Maxelpay\MaxelpayServiceProvider"
 ```
 
-```php
-// add this line in .env file
-MAXELPAY_API_KEY="******************" // api key
-MAXELPAY_SECRET_KEY="******************"  // secret key
-MAXELPAY_PAYMENT_MODE="STAGING" OR "LIVE" // payment mode staging or live
+#### Required ENV Variables
+
+```
+MAXELPAY_API_KEY="******************" #API Key
+MAXELPAY_SECRET_KEY="******************"  #Secret key
+MAXELPAY_PAYMENT_MODE="STAGING" #Payment mode STAGING or LIVE
 ```
 
 ```php

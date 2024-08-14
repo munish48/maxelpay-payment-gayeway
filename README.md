@@ -16,7 +16,7 @@ composer require maxelpay/maxelpay
 
 ## CONFIGURATION
 
-Compatible with Laravel versions 11.x
+#### Compatible with Laravel versions 11.x
 
 1. Open bootstrap/providers.php and add this line to your Service Providers Array.
 
@@ -37,7 +37,7 @@ use Illuminate\Support\Facades\Facade;
   ])->toArray(),
 ```
 
-Compatible with Laravel versions 7.x through 10.x
+#### Compatible with Laravel versions 7.x through 10.x
 
 1. Open config/app.php and add this line to your Service Providers Array.
 

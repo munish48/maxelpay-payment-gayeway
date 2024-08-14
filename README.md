@@ -61,8 +61,10 @@ MAXELPAY_SECRET_KEY="******************"  #Secret key
 MAXELPAY_PAYMENT_MODE="STAGING" #Payment mode STAGING or LIVE
 ```
 
+#### Example
+
 ```php
-// Payload example
+
  $data = array(
         "orderID"     => "123008", // Order Id
         "amount"      => "100", // Amount
@@ -79,5 +81,5 @@ MAXELPAY_PAYMENT_MODE="STAGING" #Payment mode STAGING or LIVE
 ```
 
 ```php
-Maxelpay::payload($data);
+$response = Maxelpay::payload($data);
 ```

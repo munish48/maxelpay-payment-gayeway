@@ -9,8 +9,8 @@ use Illuminate\Support\Facades\Redirect;
 
 class MaxelpayController extends Controller
 {    
-    protected static $SANDBOX_API_URL = 'https://dev-api.maxelpay.com/v1/stg/merchant/order/checkout';
-    protected static $API_URL = 'https://dev-api.maxelpay.com/v1/prod/merchant/order/checkout';
+    protected static $SANDBOX_API_URL = 'https://api.maxelpay.com/v1/stg/merchant/order/checkout';
+    protected static $API_URL = 'https://api.maxelpay.com/v1/prod/merchant/order/checkout';
     /**
      * @param array $payload
      * @return array

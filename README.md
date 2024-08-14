@@ -65,6 +65,7 @@ MAXELPAY_PAYMENT_MODE="STAGING" #Payment mode STAGING or LIVE
 
 ```php
 use Maxelpay;
+use URL;
 ```
 
 #### Payload

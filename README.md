@@ -1,4 +1,4 @@
-# Maxelpay Package
+# Maxelpay Payment Gateway
 
 A Maxelpay Integration for Laravel Framework
 
@@ -8,14 +8,15 @@ Git repo of the demo: https://github.com/munish48/maxelpay-payment-gayeway
 
 ## INSTALLATION
 
-Install the package through [Composer](http://getcomposer.org/).
+You can install the package via [Composer](http://getcomposer.org/).
 
-For Laravel :
-`composer require "maxelpay/maxelpay"`
+```bash
+composer require maxelpay/maxelpay
+```
 
 ## CONFIGURATION
 
-- Laravel 11
+Compatible with Laravel versions 11.x
 
 1. Open bootstrap/providers.php and add this line to your Service Providers Array.
 
@@ -36,7 +37,7 @@ use Illuminate\Support\Facades\Facade;
   ])->toArray(),
 ```
 
-- Laravel upto 10
+Compatible with Laravel versions 7.x through 10.x
 
 1. Open config/app.php and add this line to your Service Providers Array.
 
@@ -60,7 +61,7 @@ use Illuminate\Support\Facades\Facade;
 // add this line in .env file
 MAXELPAY_API_KEY="******************" // api key
 MAXELPAY_SECRET_KEY="******************"  // secret key
-MAXELPAY_PAYMENT_MODE="STAGING" OR "LIVE"// payment mode staging or live
+MAXELPAY_PAYMENT_MODE="STAGING" OR "LIVE" // payment mode staging or live
 ```
 
 ```php
@@ -76,7 +77,7 @@ MAXELPAY_PAYMENT_MODE="STAGING" OR "LIVE"// payment mode staging or live
         "redirectUrl" => URL::to('success'), // Success URL
         "websiteUrl"  => URL::to('/'), // Website URL
         "cancelUrl"   => URL::to('cancel'), // Cancel URL
-        "webhookUrl"  => URL::to('webhook')// Webhook URL
+        "webhookUrl"  => URL::to('webhook') // Webhook URL
     );
 ```
 

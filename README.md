@@ -55,6 +55,8 @@ use Illuminate\Support\Facades\Facade;
 
 #### Required ENV Variables
 
+[Click here](https://dashboard.maxelpay.com/developers) to obtain the API Key and API Secret.
+
 ```
 MAXELPAY_API_KEY="******************" #API Key
 MAXELPAY_SECRET_KEY="******************"  #Secret key

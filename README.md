@@ -59,7 +59,7 @@ use Illuminate\Support\Facades\Facade;
 
 ```
 MAXELPAY_API_KEY="******************" #API Key
-MAXELPAY_SECRET_KEY="******************"  #Secret key
+MAXELPAY_SECRET_KEY="******************"  #API Secret
 MAXELPAY_PAYMENT_MODE="STAGING" #Payment mode STAGING or LIVE
 ```
 

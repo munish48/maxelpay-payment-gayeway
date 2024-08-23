@@ -91,4 +91,5 @@ use Maxelpay;
 
 ```php
 $response = Maxelpay::payload($data);
+// print_r($response);
 ```

@@ -77,7 +77,7 @@ use Maxelpay;
  $data = array(
         "orderID"     => "123008", // Order Id
         "amount"      => "100", // Amount
-        "currency"    => "INR", // Currency
+        "currency"    => "INR", // supported currencies - https://dashboard.maxelpay.com/documentation/integration
         "timestamp"   => time(), // Time stamp
         "userName"    => "ABC", // Customer Name
         "siteName"    => "Maxelpay", // Website name

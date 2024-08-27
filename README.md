@@ -1,6 +1,6 @@
 # Maxelpay Payment Gateway
 
-A Maxelpay Integration for Laravel Framework
+MaxelPay.com offers a simple and fast solution for accepting Ethereum, BNB, and various other cryptocurrencies. Seamlessly receive crypto payouts from fiat currencies like Euros or U.S. Dollars, all without worrying about exchange rate volatility.
 
 ## INSTALLATION
 

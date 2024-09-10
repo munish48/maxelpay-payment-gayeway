@@ -1,7 +1,7 @@
 {
   "name": "maxelpay/maxelpay",
   "description": "This package is used to pay in the crypto currency",
-  "license": "TGPL-1.7",
+  "license": "proprietary",
   "minimum-stability": "stable",
   "prefer-stable": true,
   "require": {},
